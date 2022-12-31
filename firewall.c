@@ -11,23 +11,21 @@
 
 #define MODNAME   "PacketSaver"
 
-MODULE_AUTHOR ("Boaz Tene");
-MODULE_DESCRIPTION ("Kernel based firewall");
-MODULE_LICENSE ("Dual MIT/GPL");
-MODULE_VERSION ("0.1");
+MODULE_AUTHOR("Boaz Tene");
+MODULE_DESCRIPTION("Kernel based firewall");
+MODULE_LICENSE("Dual MIT/GPL");
+MODULE_VERSION("0.1");
 
-static int __init
-packet_saver_init (void)
+static int __init packet_saver_init(void)
 {
-  pr_info ("inserted\n");
-  return 0;
+	pr_info("inserted\n");
+	return 0;
 }
 
-static void __exit
-packet_saver_exit (void)
+static void __exit packet_saver_exit(void)
 {
-  pr_info ("removed\n");
+	pr_info("removed\n");
 }
 
-module_init (packet_saver_init);
-module_exit (packet_saver_exit);
+module_init(packet_saver_init);
+module_exit(packet_saver_exit);
